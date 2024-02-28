@@ -6,11 +6,9 @@ import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
-  declarations: [
-    AboutComponent
-  ],
-  imports: [
-    CommonModule, AboutRoutingModule, MaterialModule
-  ]
+    imports: [
+        CommonModule, AboutRoutingModule, MaterialModule,
+        AboutComponent
+    ]
 })
 export class AboutModule { }

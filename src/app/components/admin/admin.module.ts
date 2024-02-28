@@ -6,9 +6,6 @@ import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
-  declarations: [
-    AdminComponent
-  ],
-  imports: [ CommonModule, AdminRoutingModule, MaterialModule ]
+    imports: [CommonModule, AdminRoutingModule, MaterialModule, AdminComponent]
 })
 export class AdminModule { }

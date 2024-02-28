@@ -6,7 +6,6 @@ import { ProfileComponent } from './profile.component';
 import { MaterialModule } from 'src/app/material.module';
 
 @NgModule({
-  declarations: [ProfileComponent],
-  imports: [ CommonModule, ProfileRoutingModule, MaterialModule, ReactiveFormsModule ]
+    imports: [CommonModule, ProfileRoutingModule, MaterialModule, ReactiveFormsModule, ProfileComponent]
 })
 export class ProfileModule { }

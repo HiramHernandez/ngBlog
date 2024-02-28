@@ -6,7 +6,6 @@ import { MaterialModule } from '../../../material.module';
 import { TableComponent } from '../../../shared/components/table/table.component';
 
 @NgModule({
-  declarations: [ListPostsComponent, TableComponent],
-  imports: [CommonModule, ListPostRoutingModule, MaterialModule]
+    imports: [CommonModule, ListPostRoutingModule, MaterialModule, ListPostsComponent, TableComponent]
 })
 export class ListPostModule { }

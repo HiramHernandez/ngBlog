@@ -2,12 +2,17 @@ import { Component } from '@angular/core';
 import { FileI } from './../../../shared/models/file.interface';
 import { UserI } from './../../../shared/models/user.interface';
 import { AuthService } from './../../../shared/services/auth.service';
-import { FormGroup, FormControl, Validators  } from '@angular/forms';
+import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+    selector: 'app-profile',
+    templateUrl: './profile.component.html',
+    styleUrls: ['./profile.component.scss'],
+    standalone: true,
+    imports: [ReactiveFormsModule, MatCardModule, MatFormFieldModule, MatInputModule]
 })
 export class ProfileComponent {
   public image?: FileI;

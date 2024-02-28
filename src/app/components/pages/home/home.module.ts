@@ -5,12 +5,10 @@ import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-  ]
+    imports: [
+        CommonModule,
+        MaterialModule,
+        HomeComponent
+    ]
 })
 export class HomeModule { }

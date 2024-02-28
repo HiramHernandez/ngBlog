@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-list-posts',
-  templateUrl: './list-posts.component.html',
-  styleUrls: ['./list-posts.component.scss']
+    selector: 'app-list-posts',
+    templateUrl: './list-posts.component.html',
+    styleUrls: ['./list-posts.component.scss'],
+    standalone: true
 })
 export class ListPostsComponent {
 

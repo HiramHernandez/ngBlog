@@ -14,23 +14,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './components/pages/home/home.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContainerAppComponent,
-    DetailsPostsComponent,
-    EditPostComponent,
-    NewPostComponent,
-    ModalComponent,
-    ToolbarComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    AppRoutingModule,
-    HomeModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        AppRoutingModule,
+        HomeModule,
+        ContainerAppComponent,
+        DetailsPostsComponent,
+        EditPostComponent,
+        NewPostComponent,
+        ModalComponent,
+        ToolbarComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

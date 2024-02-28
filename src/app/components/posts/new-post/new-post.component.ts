@@ -4,9 +4,10 @@ import { PostI } from 'src/app/shared/models/pos.interface';
 import { PostService } from '../post.service';
 
 @Component({
-  selector: 'app-new-post',
-  templateUrl: './new-post.component.html',
-  styleUrls: ['./new-post.component.scss']
+    selector: 'app-new-post',
+    templateUrl: './new-post.component.html',
+    styleUrls: ['./new-post.component.scss'],
+    standalone: true
 })
 export class NewPostComponent implements OnInit {
   private image: any;
